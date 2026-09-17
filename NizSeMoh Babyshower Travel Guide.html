@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby Shower Guest Guide — October 10th, Hillsborough NJ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf5ec;
+    --paper:#fffdf9;
+    --sage:#6f7d5e;
+    --sage-dark:#4e5a41;
+    --clay:#c98a5e;
+    --blush:#e3b7a4;
+    --ink:#332e26;
+    --ink-soft:#6b6355;
+    --line:#e4d9c6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Karla', sans-serif;
+    line-height:1.6;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 24px 80px;
+  }
+  header.hero{
+    padding:64px 24px 48px;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+    margin-bottom:56px;
+    background:
+      radial-gradient(ellipse at top, rgba(111,125,94,0.08), transparent 60%);
+  }
+  .eyebrow{
+    font-size:13px;
+    letter-spacing:0.08em;
+    color:var(--sage);
+    margin-bottom:14px;
+    font-weight:500;
+  }
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:44px;
+    line-height:1.15;
+    margin:0 0 16px;
+    color:var(--sage-dark);
+  }
+  .hero p{
+    font-size:17px;
+    color:var(--ink-soft);
+    max-width:480px;
+    margin:0 auto;
+  }
+  .hero .date{
+    display:inline-block;
+    margin-top:22px;
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:20px;
+    color:var(--clay);
+  }
+  section{
+    margin-bottom:56px;
+  }
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    margin-bottom:22px;
+    border-bottom:2px solid var(--sage);
+    padding-bottom:10px;
+  }
+  .section-num{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    color:var(--clay);
+    font-size:18px;
+    min-width:20px;
+  }
+  h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:26px;
+    margin:0;
+    color:var(--sage-dark);
+  }
+  .note{
+    background:var(--paper);
+    border:1px dashed var(--clay);
+    border-radius:8px;
+    padding:16px 18px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+    margin-bottom:20px;
+  }
+  .note strong{color:var(--clay);}
+  .card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:18px 22px;
+    margin-bottom:14px;
+  }
+  .card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .card-title{
+    font-family:'Fraunces', serif;
+    font-size:19px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .price-tag{
+    font-size:14px;
+    font-weight:700;
+    color:var(--sage-dark);
+    background:rgba(111,125,94,0.12);
+    padding:3px 10px;
+    border-radius:20px;
+    white-space:nowrap;
+  }
+  .card-meta{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin-top:4px;
+  }
+  .card-desc{
+    font-size:14.5px;
+    color:var(--ink-soft);
+    margin-top:8px;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:hidden;
+  }
+  th,td{
+    text-align:left;
+    padding:12px 16px;
+    font-size:14.5px;
+    border-bottom:1px solid var(--line);
+  }
+  th{
+    background:rgba(111,125,94,0.10);
+    color:var(--sage-dark);
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:0.03em;
+  }
+  tr:last-child td{border-bottom:none;}
+  .callout{
+    background:linear-gradient(135deg, rgba(111,125,94,0.10), rgba(201,138,94,0.10));
+    border-radius:12px;
+    padding:28px 26px;
+    text-align:center;
+  }
+  .callout .big{
+    font-family:'Fraunces', serif;
+    font-size:38px;
+    color:var(--sage-dark);
+    font-weight:500;
+    margin-bottom:6px;
+  }
+  .callout .sub{
+    color:var(--ink-soft);
+    font-size:14.5px;
+  }
+  .venue-fields{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:10px 14px;
+    font-size:15px;
+  }
+  .venue-fields dt{
+    color:var(--ink-soft);
+    font-weight:700;
+  }
+  .venue-fields dd{
+    margin:0;
+  }
+  .fill-in{
+    color:var(--clay);
+    font-style:italic;
+  }
+  footer{
+    text-align:center;
+    padding-top:36px;
+    border-top:1px solid var(--line);
+    font-size:13.5px;
+    color:var(--ink-soft);
+  }
+  @media (max-width:520px){
+    h1{font-size:32px;}
+    .venue-fields{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">YOU'RE INVITED</div>
+    <h1>Baby Shower Guest Guide</h1>
+    <p>Everything you need to plan your trip — venue details, places to stay, where to eat, and how to get here.</p>
+    <div class="date">Weekend of October 10th, 2026 &nbsp;·&nbsp; Hillsborough, New Jersey</div>
+  </header>
+
+  <section>
+    <div class="section-head"><span class="section-num">01</span><h2>Venue Information</h2></div>
+    <dl class="venue-fields">
+      <dt>Venue</dt><dd>Serene Springs Farm <a href="https://maps.app.goo.gl/AbvxPneZJynm2KJn9" target="_blank" style="color:var(--clay); text-decoration:underline;">[Link]</a></dd>
+      <dt>Address</dt><dd>121 S Branch Rd, Hillsborough Township, NJ 08844</dd>
+      <dt>Directions</dt><dd>From Route 206, take New Amwell Rd, then left onto Beekman Lane, then right onto South Branch Rd to #121 — it's directly across from Norz Hill Farm &amp; Market, a handy landmark for GPS.</dd>
+      <dt>Date</dt><dd>Saturday, October 10, 2026 — 11:00 AM</dd>
+      <dt>Parking</dt><dd>On-site lot</dd>
+    </dl>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">02</span><h2>Nearby Hotel Stays</h2></div>
+    <div class="note">For overnight stays, here are a few recommended options near the venue.<br><br><em>(And no matter where you choose to rest your head at night, we'd love to have you around at the farmhouse through the weekend — we've got it booked October 9th–11th, so come by, relax, and spend some time with us beyond just the event itself.)</em></div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">TownePlace Suites by Marriott Bridgewater Branchburg</div>
+        <div class="price-tag">~$170/night</div>
+      </div>
+      <div class="card-meta">1050 Route 202 South, Branchburg, NJ 08876 — 8 minutes from the venue</div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">Fairfield Inn &amp; Suites Bridgewater Branchburg/Somerville</div>
+        <div class="price-tag">~$140/night</div>
+      </div>
+      <div class="card-meta">947 US Highway 202 N, Branchburg, NJ 08876 — 7 minutes from the venue</div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">Homewood Suites by Hilton Bridgewater/Branchburg</div>
+        <div class="price-tag">~$160/night</div>
+      </div>
+      <div class="card-meta">968 Route 202 South, Branchburg, NJ 08876 — 7 minutes from the venue</div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">Days Inn by Wyndham Hillsborough</div>
+        <div class="price-tag">~$125/night</div>
+      </div>
+      <div class="card-meta">118 US-206, Hillsborough Township, NJ 08844 — 13 minutes from the venue</div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">Hilton Garden Inn Bridgewater</div>
+        <div class="price-tag">~$150/night</div>
+      </div>
+      <div class="card-meta">500 Promenade Blvd, Bridgewater, NJ 08807 — 17 minutes from the venue</div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">Travel Inn &amp; Suites</div>
+        <div class="price-tag">~$90/night</div>
+      </div>
+      <div class="card-meta">482 US Highway 202 N, Flemington, NJ 08822 — 16 minutes from the venue</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">03</span><h2>Nearby Indian Restaurants</h2></div>
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">Masala Art</div>
+        <div class="price-tag">$$</div>
+      </div>
+      <div class="card-meta">1049 US-202, Branchburg, NJ 08876 — 6 minutes from the venue</div>
+      <div class="card-desc">Fine-dining North Indian and Mughlai cuisine, full bar on-site.</div>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">Biryani City</div>
+        <div class="price-tag">$</div>
+      </div>
+      <div class="card-meta">30 Falcon Rd, Hillsborough Township, NJ 08844 — 12 minutes from the venue</div>
+      <div class="card-desc">A local favorite known for its biryanis; top-rated Indian spot in Hillsborough itself.</div>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">SriRangam - Veg Restaurant</div>
+        <div class="price-tag">$$</div>
+      </div>
+      <div class="card-meta">2311 US-206, Suite 102, Belle Mead, NJ 08502 — 16 minutes from the venue</div>
+      <div class="card-desc">Authentic South Indian vegetarian menu — dosas, idlis, and Indo-Chinese options.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title">Bhatura King</div>
+        <div class="price-tag">$</div>
+      </div>
+      <div class="card-meta">1710 Oaktree Rd, Edison, NJ 08820 — 36 minutes from the venue</div>
+      <div class="card-desc">A Little India institution known for one thing done exceptionally well — authentic Delhi-style chole bhature.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">04</span><h2>Accessible Airports</h2></div>
+    <table>
+      <tr><th>Airport</th><th>Distance</th><th>Drive time</th><th>Notes</th></tr>
+      <tr><td>Trenton–Mercer (TTN)</td><td>~18–24 mi</td><td>~30–40 min</td><td>Closest airport; limited routes (mainly Frontier)</td></tr>
+      <tr><td>Newark Liberty (EWR)</td><td>~34–38 mi</td><td>~50–55 min</td><td>Best flight selection — most guests should aim here</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">05</span><h2>Distance from Times Square, NYC</h2></div>
+    <div class="callout">
+      <div class="big">~44–48 miles</div>
+      <div class="sub">About 1 hour to 1 hr 15 min driving, depending on traffic. By NJ Transit train + connection from Somerville station, budget roughly 1 hr 20–30 min.</div>
+    </div>
+  </section>
+
+  <footer>
+    Can't wait to celebrate with you! Reach out anytime with questions.
+  </footer>
+
+</div>
+</body>
+</html>

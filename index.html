@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baby Shower — Nirzari & Mohit</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>☽</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="moon-wrap">
+    <svg viewBox="0 0 200 200" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="moonGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fde68a"/>
+          <stop offset="35%" stop-color="#fbbf24"/>
+          <stop offset="65%" stop-color="#f59e0b"/>
+          <stop offset="100%" stop-color="#d97706"/>
+        </linearGradient>
+        <clipPath id="crescentClip">
+          <path d="M0 0 H200 V200 H0 Z"/>
+        </clipPath>
+        <mask id="crescentMask">
+          <circle cx="90" cy="100" r="80" fill="white"/>
+          <circle cx="125" cy="90" r="65" fill="black"/>
+        </mask>
+      </defs>
+      <g mask="url(#crescentMask)">
+        <circle cx="90" cy="100" r="80" fill="url(#moonGrad)"/>
+        <circle cx="60" cy="70" r="1.5" fill="white" opacity="0.9"/>
+        <circle cx="45" cy="110" r="1" fill="white" opacity="0.8"/>
+        <circle cx="70" cy="130" r="1.5" fill="white" opacity="0.85"/>
+        <circle cx="55" cy="85" r="1" fill="white" opacity="0.7"/>
+        <circle cx="80" cy="150" r="1" fill="white" opacity="0.8"/>
+        <circle cx="40" cy="140" r="1.5" fill="white" opacity="0.75"/>
+        <circle cx="65" cy="60" r="1" fill="white" opacity="0.9"/>
+        <circle cx="50" cy="125" r="1" fill="white" opacity="0.7"/>
+        <circle cx="75" cy="95" r="1.5" fill="white" opacity="0.85"/>
+        <circle cx="35" cy="100" r="1" fill="white" opacity="0.8"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hanging-stars">
+    <div class="h-star" style="left:30%; --delay:0.3s">
+      <div class="string" style="--h:100px"></div>
+      <div class="star-shape" style="--size:30px"></div>
+    </div>
+    <div class="h-star" style="left:42%; --delay:1.5s">
+      <div class="string" style="--h:55px"></div>
+      <div class="star-shape" style="--size:20px"></div>
+    </div>
+    <div class="h-star" style="left:55%; --delay:0.8s">
+      <div class="string" style="--h:130px"></div>
+      <div class="star-shape" style="--size:25px"></div>
+    </div>
+    <div class="h-star" style="left:65%; --delay:2s">
+      <div class="string" style="--h:75px"></div>
+      <div class="star-shape" style="--size:32px"></div>
+    </div>
+    <div class="h-star" style="left:75%; --delay:0.5s">
+      <div class="string" style="--h:45px"></div>
+      <div class="star-shape" style="--size:18px"></div>
+    </div>
+    <div class="h-star" style="left:85%; --delay:1.8s">
+      <div class="string" style="--h:110px"></div>
+      <div class="star-shape" style="--size:26px"></div>
+    </div>
+    <div class="h-star" style="left:93%; --delay:0.2s">
+      <div class="string" style="--h:65px"></div>
+      <div class="star-shape" style="--size:22px"></div>
+    </div>
+  </div>
+
+  <main class="page-content landing">
+    <h1>We are over the moon</h1>
+    <div class="eyebrow">Please join us for our</div>
+    <div class="shower-title">&#10024; Baby Shower &#10024;</div>
+    <div class="names">Nirzari &amp; Mohit</div>
+    <div class="event-date">Saturday, October 10th, 2026</div>
+    <div class="event-time">&#9201; 11 AM</div>
+    <div class="venue-name">&#128205; Serene Springs Farm</div>
+    <div class="location">121 S Branch Rd, Hillsborough Township, NJ 08844</div>
+    <div class="tagline">We can&rsquo;t wait to celebrate with you!</div>
+
+    <nav class="nav-links">
+      <a href="rsvp.html" class="nav-card">
+        <span class="card-icon">&#9993;</span>
+        <span class="card-label">RSVP</span>
+      </a>
+      <a href="registry.html" class="nav-card">
+        <span class="card-icon">&#10022;</span>
+        <span class="card-label">Registry</span>
+      </a>
+      <a href="travel.html" class="nav-card">
+        <span class="card-icon">&#10023;</span>
+        <span class="card-label">Travel Guide</span>
+      </a>
+    </nav>
+  </main>
+
+  <script src="stars.js"></script>
+</body>
+</html>

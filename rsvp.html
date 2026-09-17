@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP — Baby Shower</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>&#9789;</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="moon-wrap">
+    <svg viewBox="0 0 200 200" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="moonGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fde68a"/>
+          <stop offset="35%" stop-color="#fbbf24"/>
+          <stop offset="65%" stop-color="#f59e0b"/>
+          <stop offset="100%" stop-color="#d97706"/>
+        </linearGradient>
+        <mask id="crescentMask">
+          <circle cx="90" cy="100" r="80" fill="white"/>
+          <circle cx="125" cy="90" r="65" fill="black"/>
+        </mask>
+      </defs>
+      <g mask="url(#crescentMask)">
+        <circle cx="90" cy="100" r="80" fill="url(#moonGrad)"/>
+        <circle cx="60" cy="70" r="1.5" fill="white" opacity="0.9"/>
+        <circle cx="45" cy="110" r="1" fill="white" opacity="0.8"/>
+        <circle cx="70" cy="130" r="1.5" fill="white" opacity="0.85"/>
+        <circle cx="55" cy="85" r="1" fill="white" opacity="0.7"/>
+        <circle cx="80" cy="150" r="1" fill="white" opacity="0.8"/>
+        <circle cx="40" cy="140" r="1.5" fill="white" opacity="0.75"/>
+        <circle cx="65" cy="60" r="1" fill="white" opacity="0.9"/>
+        <circle cx="50" cy="125" r="1" fill="white" opacity="0.7"/>
+        <circle cx="75" cy="95" r="1.5" fill="white" opacity="0.85"/>
+        <circle cx="35" cy="100" r="1" fill="white" opacity="0.8"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hanging-stars">
+    <div class="h-star" style="left:30%; --delay:0.3s">
+      <div class="string" style="--h:100px"></div>
+      <div class="star-shape" style="--size:30px"></div>
+    </div>
+    <div class="h-star" style="left:42%; --delay:1.5s">
+      <div class="string" style="--h:55px"></div>
+      <div class="star-shape" style="--size:20px"></div>
+    </div>
+    <div class="h-star" style="left:55%; --delay:0.8s">
+      <div class="string" style="--h:130px"></div>
+      <div class="star-shape" style="--size:25px"></div>
+    </div>
+    <div class="h-star" style="left:65%; --delay:2s">
+      <div class="string" style="--h:75px"></div>
+      <div class="star-shape" style="--size:32px"></div>
+    </div>
+    <div class="h-star" style="left:75%; --delay:0.5s">
+      <div class="string" style="--h:45px"></div>
+      <div class="star-shape" style="--size:18px"></div>
+    </div>
+    <div class="h-star" style="left:85%; --delay:1.8s">
+      <div class="string" style="--h:110px"></div>
+      <div class="star-shape" style="--size:26px"></div>
+    </div>
+    <div class="h-star" style="left:93%; --delay:0.2s">
+      <div class="string" style="--h:65px"></div>
+      <div class="star-shape" style="--size:22px"></div>
+    </div>
+  </div>
+
+  <div class="page-content wrap">
+    <header class="page-header">
+      <a href="index.html" class="back-link">&#8592; Back to Home</a>
+      <h1>RSVP</h1>
+      <p>We'd love to know if you can make it! Please fill out the form below.</p>
+    </header>
+
+    <div id="rsvp-form-container" class="rsvp-form-wrap">
+      <form id="rsvp-form" novalidate>
+
+        <div class="form-group">
+          <label for="name">Your Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Will you attend? <span class="required">*</span></label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="attend-yes" name="attend" value="yes" required>
+              <label for="attend-yes" class="radio-label">Joyfully Accept</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="attend-no" name="attend" value="no">
+              <label for="attend-no" class="radio-label">Regretfully Decline</label>
+            </div>
+          </div>
+
+          <div id="guest-count" class="guest-count">
+            <div class="number-row">
+              <div class="number-field form-group">
+                <label for="adults">Adults</label>
+                <input type="number" id="adults" name="adults" min="1" max="10" value="1">
+              </div>
+              <div class="number-field form-group">
+                <label for="kids">Kids</label>
+                <input type="number" id="kids" name="kids" min="0" max="10" value="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="note">A note for Nirzari and Mohit</label>
+          <textarea id="note" name="note" placeholder="Share a wish, a note, or just say hello..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send RSVP</button>
+      </form>
+    </div>
+
+    <div id="rsvp-success" class="rsvp-success" style="display: none;">
+      <div class="success-icon">&#10022;</div>
+      <h2>Thank You!</h2>
+      <p>Your RSVP has been received. We can't wait to celebrate with you!</p>
+      <br>
+      <a href="index.html" class="registry-btn" style="margin-top: 24px;">
+        <span>&#8592;</span>
+        <span>Back to Home</span>
+      </a>
+    </div>
+
+    <footer>
+      Can't wait to celebrate with you! <span class="heart">&#9829;</span>
+    </footer>
+  </div>
+
+  <script>
+    var attendYes = document.getElementById('attend-yes');
+    var attendNo = document.getElementById('attend-no');
+    var guestCount = document.getElementById('guest-count');
+
+    function toggleGuestCount() {
+      if (attendYes.checked) {
+        guestCount.classList.add('visible');
+      } else {
+        guestCount.classList.remove('visible');
+      }
+    }
+
+    attendYes.addEventListener('change', toggleGuestCount);
+    attendNo.addEventListener('change', toggleGuestCount);
+
+    var FORM_URL = 'https://script.google.com/macros/s/AKfycbwQpSO-z-iSrmBQL_psvlGJ18E_Js9Tr6Szk2Vw--9qQfGHPH7dRy1FerQG-HtDx9Vl/exec';
+    var submitBtn = document.querySelector('.submit-btn');
+
+    document.getElementById('rsvp-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var attend = document.querySelector('input[name="attend"]:checked');
+
+      if (!name || !email || !attend) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      var params = new URLSearchParams({
+        name: name,
+        email: email,
+        attend: attend.value,
+        adults: document.getElementById('adults').value,
+        kids: document.getElementById('kids').value,
+        note: document.getElementById('note').value.trim()
+      });
+
+      var url = FORM_URL + '?' + params.toString();
+
+      fetch(url, { mode: 'no-cors', credentials: 'omit', redirect: 'follow' })
+        .finally(function() {
+          document.getElementById('rsvp-form-container').style.display = 'none';
+          document.getElementById('rsvp-success').style.display = 'block';
+        });
+    });
+  </script>
+
+  <script src="stars.js"></script>
+</body>
+</html>
