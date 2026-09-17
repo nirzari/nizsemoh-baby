@@ -225,7 +225,7 @@ body {
 
 .landing .event-date {
   font-family: 'Karla', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--text-soft);
   letter-spacing: 0.04em;
@@ -234,7 +234,7 @@ body {
 
 .landing .event-time {
   font-family: 'Karla', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-soft);
   margin-bottom: 14px;
 }
